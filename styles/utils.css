@@ -1,0 +1,45 @@
+.container {
+  --max-width: 393px;
+  width: min(var(--max-width), 100% - var(--padding-x-lg) * 2);
+  margin: auto;
+}
+
+.padding-y {
+  padding-block: var(--padding-y);
+}
+
+.padding-y-lg {
+  padding-block: var(--padding-y-lg);
+}
+
+.padding-y-xl {
+  padding-block: var(--padding-y-xl);
+}
+
+.padding-x-lg {
+  padding-inline: var(--padding-x-lg);
+}
+
+.desktop-only {
+  display: none;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

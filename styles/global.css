@@ -32,6 +32,13 @@
   --stroke-color: #27272a;
   --text-color-secondary: #a1a1aa;
   --text-color-primary: #f4f4f5;
+
+  /* Spacing variables */
+
+  --padding-x-lg: 1.5rem;
+  --padding-y: 1rem;
+  --padding-y-lg: 1.5rem;
+  --padding-y-xl: 3rem;
 }
 
 /* Desktop */
@@ -44,6 +51,13 @@
     --header3: 800 2rem/120% var(--inter); /* 32px → 2rem */
     --paragraph: 400 1rem/160% var(--inter); /* 16px → 1rem */
     --span: 500 0.875rem/100% var(--inter); /* 14px → 0.875rem */
+
+    /* Spacing variables */
+
+    --padding-y: 1.5rem;
+    --padding-y-lg: 2rem;
+    --padding-y-xl: 5rem;
+    --padding-x-lg: 2rem;
   }
 }
 
@@ -77,15 +91,15 @@ h3 {
   font: var(--header3);
 }
 
-p{
-    font: var(--paragraph);
+p {
+  font: var(--paragraph);
 }
 
-span{
-    font: var(--span);
+span {
+  font: var(--span);
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
