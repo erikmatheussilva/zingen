@@ -108,6 +108,17 @@ a {
   color: inherit;
 }
 
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--brand-gradient-start) 0%,
+    var(--brand-gradient-end) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 ul[role="list"] {
   list-style: none;
 }

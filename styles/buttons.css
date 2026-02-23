@@ -48,7 +48,7 @@
     border-radius: inherit;
     inset: 1.5px;
     background-color: var(--background-color);
-}
+  }
   &::after {
     content: attr(aria-label);
     background: var(--btn-bg-color);
