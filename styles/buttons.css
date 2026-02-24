@@ -22,6 +22,9 @@
     var(--brand-gradient-end) 100%
   );
   --btn-color: var(--surface-color);
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  color: var(--btn-color);
 }
 
 .btn-lg {
