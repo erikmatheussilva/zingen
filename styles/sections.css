@@ -22,7 +22,7 @@
 
 @media (width >= 80em) {
   #hero {
-    background: url(../assets/icons/hero-bg-desktop.svg) no-repeat bottom
+    background: url(../assets/images/hero-bg-desktop.svg) no-repeat bottom
       center/contain;
     padding-bottom: 15rem;
     & img[src*="music-bars"] {
@@ -41,4 +41,53 @@
       margin-top: 1.5rem;
     }
   }
+}
+
+#smartphones {
+  margin-top: 5rem;
+  background: url(../assets/images/bg-mobile.svg) no-repeat top/cover;
+  & img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (width >= 80em) {
+  #smartphones {
+    margin-top: 0;
+    background: none;
+    background-color: var(--surface-color);
+    & img {
+      display: none;
+    }
+  }
+
+
+}
+
+#about {
+  background-color: var(--surface-color);
+  & p {
+    color: var(--text-color-secondary);
+  }
+  & strong {
+    color: var(--brand-gradient-end);
+  }
+
+  & h2 {
+    margin-block: .5rem;
+  }
+
+  & img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (width >= 80em) {
+#about{
+  & h2{
+    margin-block: 1rem;
+  }
+}
 }

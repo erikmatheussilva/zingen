@@ -29,23 +29,26 @@
   gap: 1.5rem;
 }
 
-.grid{
-    display: grid;
+.items-center {
+  align-items: center;
+}
+.grid {
+  display: grid;
 }
 
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.block{
-    display: block;
+.block {
+  display: block;
 }
 
-.gap-1{
-    gap: 1rem;
+.gap-1 {
+  gap: 1rem;
 }
 .gap-1-5 {
-    gap: 1.5rem;
+  gap: 1.5rem;
 }
 
 @media (width >= 80em) {
