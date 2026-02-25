@@ -19,6 +19,7 @@
 
   --header1: 800 2.5rem/120% var(--inter); /* 40px → 2.5rem */
   --header2: 800 1.5rem/120% var(--inter); /* 24px → 1.5rem */
+  --header: 400 1.5rem/120% var(--inter); /* 20px → 1.25rem */
   --header3: 800 1.25rem/120% var(--inter); /* 20px → 1.25rem */
   --paragraph: 400 1rem/160% var(--inter); /* 16px → 1rem */
   --span: 500 0.875rem/100% var(--inter); /* 14px → 0.875rem */
@@ -55,6 +56,7 @@
     --header3: 800 2rem/120% var(--inter); /* 32px → 2rem */
     --paragraph: 400 1rem/160% var(--inter); /* 16px → 1rem */
     --span: 500 0.875rem/100% var(--inter); /* 14px → 0.875rem */
+    --header: 500 2.5rem/120% var(--inter); /* 24px → 1.5rem */
 
     /* Spacing variables */
 

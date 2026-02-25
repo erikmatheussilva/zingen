@@ -37,6 +37,10 @@
     display: flex;
 }
 
+.block{
+    display: block;
+}
+
 .gap-1{
     gap: 1rem;
 }
