@@ -168,3 +168,137 @@
     }
   }
 }
+
+#pricing {
+  --price-font: 800 2rem/120% var(--inter); /* 32px → 2rem */
+  margin-top: 3rem;
+  --small: 500 0.875rem/125% var(--inter);
+
+  & header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  & .btn {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+
+  & .plan-card {
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 1.5rem;
+    max-height: 550px;
+
+    & .divider {
+      height: 1px;
+      margin-block: 2rem;
+      background: radial-gradient(
+        var(--text-color-secondary),
+        var(--surface-color) 70%
+      );
+    }
+
+    & p {
+      color: var(--text-color-secondary);
+    }
+
+    & ul li {
+      font: 400 1rem/125% var(--inter);
+
+      color: var(--text-color-secondary);
+      background: url(../assets/icons/check.svg) no-repeat;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    & ul + small {
+      font: 500 0.875rem/125% var(--inter);
+      color: var(--text-color-secondary);
+      display: block;
+      margin-top: 1rem;
+    }
+    & zin-pricing {
+      display: block;
+      padding-block: 1.5rem;
+      font: var(--price-font);
+    }
+
+    & zin-pricing small {
+      font: var(--small);
+      color: var(--text-color-secondary);
+    }
+  }
+
+  & .premium {
+    position: relative;
+    padding: 1px;
+    & .plan-card {
+      padding-top: 4.25rem;
+      & > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.75rem 2rem;
+        background: linear-gradient(
+          90deg,
+          var(--brand-gradient-start),
+          var(--brand-gradient-end) 100%
+        );
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        color: var(--stroke-color);
+        font: 600 0.875rem/125% var(--inter);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+    }
+
+    &::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--brand-gradient-start),
+        var(--brand-gradient-end) 100%
+      );
+      position: absolute;
+      inset: 0;
+      border-radius: 1.5rem;
+      z-index: -1;
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #pricing {
+    --price-font: 800 2.5rem/120% var(--inter); /* 32px → 2rem */
+    --small: 300 1rem/125% var(--inter);
+
+    & .btn {
+      font-size: initial;
+    }
+
+    & .plan-card {
+      max-height: 550px;
+    }
+
+    & header {
+      max-width: 50rem;
+      margin-inline: auto;
+      margin-bottom: 2rem;
+    }
+    & > div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    & .premium .plan-card {
+      padding-bottom: 6rem;
+      max-height: max-content;
+    }
+
+    & ul li {
+      font: 400 1rem/125% var(--inter);
+      margin-bottom: 1.25rem;
+    }
+  }
+}
