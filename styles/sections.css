@@ -177,6 +177,9 @@
   & header {
     text-align: center;
     margin-bottom: 1rem;
+    & strong {
+      color: var(--brand-gradient-end);
+    }
   }
 
   & .btn {
@@ -302,3 +305,45 @@
     }
   }
 }
+
+#download {
+  .card {
+    padding: 3rem 1.5rem 15rem;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 1.5rem;
+    position: relative;
+    & #happy-man {
+      width: 14.5rem;
+      position: absolute;
+      bottom: 0;
+      right: -3.5rem;
+
+    }
+  }
+
+  & strong {
+    color: var(--brand-gradient-end);
+  }
+
+  .buttons{
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+}
+
+@media (width >= 80em) {
+  #download {
+    .card{
+      padding: 8.75rem 5rem;
+      & > div:nth-child(1) {
+        max-width: 40rem;
+      }
+
+      & #happy-man {
+        width: 30rem;
+      }
+    }
+  }
+}
+
