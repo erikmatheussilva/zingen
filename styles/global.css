@@ -128,7 +128,7 @@ ul[role="list"] {
   list-style: none;
 }
 
-img:not(#music) {
+img:not(#music, .desktop-only) {
   display: block;
   max-width: 100%;
   height: auto;
