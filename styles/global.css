@@ -128,7 +128,7 @@ ul[role="list"] {
   list-style: none;
 }
 
-img {
+img:not(#music) {
   display: block;
   max-width: 100%;
   height: auto;
